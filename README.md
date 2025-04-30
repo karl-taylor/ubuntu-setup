@@ -1,6 +1,8 @@
 # Ubuntu Setup
 This is a setup, sepcifically for Ubuntu 25.04, to get a home desktop setup how Karl preffers it, ready for gaming and other
 
+Note: Paste into the terminal with CTRL+SHIFT+V
+
 ## Initial
 Update existing packages
 ```
@@ -149,13 +151,14 @@ sudo apt upgrade will install updates for software installed via apt, but not fl
 
 I reccomend creating a script in your homedir call update-all, pasting the contents below, then running this to update everything all at once
 ```
+cd
 nano ~/update-all
 # Paste the contents
 # Save and quit with: CTRL+X y enter
-# Make it executable with
-chmod +x ~/update-all 
+chmod +x ~/update-all
+./update-all
 ```
-File contents (paste with CTRL+SHIFT+V in terminal)
+File contents
 ```
 sudo apt update && sudo apt upgrade # apt updates (most of the system)
 echo '======= apt updates done ======='
