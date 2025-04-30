@@ -30,6 +30,7 @@ Steam games will install in your homedir under ~/.var/app/com.valvesoftware.Stea
 
 ### Proton ge
 Proton is a Windows compatability layer, built on top of WINE. Steam already comes with proton, but we will be adding proton ge wich is a fork that includes extras such as extra video codecs for more compatability.
+
 I specifically encountered errors in Blue Prince where the videos won't render (and are replaced with a TV test colour screen) without this.
 
 We will be installing a GUI proton manager ProtonUp-Qt to do most of the work for us, install this with
@@ -37,6 +38,7 @@ We will be installing a GUI proton manager ProtonUp-Qt to do most of the work fo
 flatpak install flathub net.davidotek.pupgui2
 ```
 Launch ProtonUp-Qt, and you should see "Steam Flatpak" in the install for dropdown. Click Add version, GE-Proton with the latest version (should already be selected by default).
+
 Restart Steam, now you can change individual games to run on proton ge (Right click Properties > Compatibility > TICK Force the user of a specific Steam Play > select GE-Proton from the list), or change the default from the dropdown under Steam > Settings > Compatibility
 
 ### Epic games
@@ -65,6 +67,7 @@ Install Lutris with
 flatpak install flathub net.lutris.Lutris
 ```
 Launch the app, and it should start downloading required extras. Click the User icon next to the source that you plan on using, and follow the on-screen prompts to download specifc extras to run it.
+
 Note with EA App, after originally signing in I was presented with a mobile app page that crashed, since then I have a Play icon next to the source that launches the full app which works.
 
 ## Discord
@@ -78,15 +81,16 @@ Fuck firefox. Use this non-user-tracking fork instead
 ```
 flatpak install flathub one.ablaze.floorp
 ```
-Plugins:
-https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/
-https://addons.mozilla.org/en-US/firefox/addon/bitwarden-password-manager/
-https://addons.mozilla.org/en-US/firefox/addon/sponsorblock/
+Useful plugins:
+* https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/
+* https://addons.mozilla.org/en-US/firefox/addon/bitwarden-password-manager/
+* https://addons.mozilla.org/en-US/firefox/addon/sponsorblock/
 
 ## Moving installs to another drive
 Once you have a drive mounted (by adding it to /etc/fstab) you can simply copy contents that you want on it across, then setup a symlink, and the app can contiune to load files via the symlinked path as though the files are still in that location.
 
 Note with these examples that slashes at the end matter, (mv myfolder /mnt/slowharddrive) will move myfolder along with it's contents, while (mv myfolder/ /mnt/slowharddrive) will leave the myfolder in place but will move all it's contents.
+
 Quotes are optional, but are required if you want to add spaces to a path.
 
 Example, moving all Steam games onto a drive I have mounted at /mnt/slowharddrive/
