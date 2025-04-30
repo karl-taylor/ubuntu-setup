@@ -111,6 +111,7 @@ Useful plugins:
 * https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/
 * https://addons.mozilla.org/en-US/firefox/addon/bitwarden-password-manager/
 * https://addons.mozilla.org/en-US/firefox/addon/sponsorblock/
+* https://addons.mozilla.org/en-US/firefox/addon/facebook-container/
 
 ## Moving installs to another drive
 Once you have a drive mounted (by adding it to /etc/fstab) you can simply copy contents that you want on it across, then setup a symlink, and the app can contiune to load files via the symlinked path as though the files are still in that location.
