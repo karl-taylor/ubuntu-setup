@@ -49,6 +49,8 @@ Launch ProtonUp-Qt, and you should see "Steam Flatpak" in the install for dropdo
 
 Restart Steam, now you can change individual games to run on proton ge (Right click Properties > Compatibility > TICK Force the user of a specific Steam Play > select GE-Proton from the list), or change the default from the dropdown under Steam > Settings > Compatibility
 
+ProtonUp-QT can also be used to install other proton/wine options for Heroic Games and Lutris
+
 ### Epic games
 Epic has no linux installer, but there are two alternative options. You could install the Epic app via Lutris using the same instructions as EA App, or you could use Heroic Games Launcher which I prefer.
 
