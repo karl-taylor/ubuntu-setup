@@ -15,6 +15,10 @@ sudo apt install flatpak
 sudo apt install gnome-software-plugin-flatpak
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 ```
+### GPU drivers
+If you are running an AMD gpu, then your drivers come pre-installed with Linux and you are a better person.
+
+For Nvidia drivers, open the Additonal Drivers app and select the latest available version. There are often multi versions, usually stick with the Nvidia proprietary ones as they will be more up to date.
 
 ## Gaming
 
