@@ -143,3 +143,25 @@ draws a cool train when you mess up typing ls
 ```
 sudo apt install sl
 ```
+
+## Updating everything
+sudo apt upgrade will install updates for software installed via apt, but not flatpaks or other hardware devices. Note: snaps will auto-update
+
+I reccomend creating a script in your homedir call update-all, pasting the contents below, then running this to update everything all at once
+```
+nano ~/update-all
+# Paste the contents
+# Save and quit with: CTRL+X y enter
+# Make it executable with
+chmod +x ~/update-all 
+```
+File contents
+```
+sudo apt update && sudo apt upgrade # apt updates (most of the system)
+echo '======= apt updates done ======='
+sudo flatpak update # update flatpaks
+echo '======= flatpak updates done ======='
+sudo fwupdmgr get-updates # firmware updates
+echo '======= firmware updates done ======='
+echo '======= all updates done ======='
+```
