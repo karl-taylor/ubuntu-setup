@@ -23,7 +23,7 @@ For Nvidia drivers, open the Additonal Drivers app and select the latest availab
 ## Gaming
 
 ### Steam
-Install steam
+Install Steam
 ```
 flatpak install flathub com.valvesoftware.Steam
 ```
@@ -31,6 +31,10 @@ Launch and sign into Steam, then navigate to Steam > Settings > Compatibility > 
 
 Steam games will install in your homedir under ~/.var/app/com.valvesoftware.Steam/.local/share/Steam/steamapps/common
 
+Install steam-devices, which just automatically changes some file permissions to allow steam to use hardware devices to access controllers
+```
+sudo apt install steam-devices
+```
 
 ### Proton ge
 Proton is a Windows compatability layer, built on top of WINE. Steam already comes with proton, but we will be adding proton ge wich is a fork that includes extras such as extra video codecs for more compatability.
@@ -107,4 +111,28 @@ Move specifically just Helldivers 2
 ```
 sudo mv '~/.var/app/com.valvesoftware.Steam/.local/share/Steam/steamapps/common/Helldivers 2' /mnt/showhardrive
 sudo ln /mnt/showhardrive/steamapps '~/.var/app/com.valvesoftware.Steam/.local/share/Steam/steamapps/common/Helldivers 2' -s
+```
+
+## Other userful linux cli apps to install
+
+### ncdu
+Show the sizes of all directories and explore them (like windirstat etc)
+```
+sudo apt install ncdu
+```
+Use -x to ignore other drives, and sudo to get system files. Expore all drive contents with
+```
+sudo ncdu -x /
+```
+
+### vscode
+Coding / development tool
+```
+sudo snap install code --classic
+```
+
+### sl
+draws a cool train when you mess up typing ls
+```
+sudo apt install sl
 ```
