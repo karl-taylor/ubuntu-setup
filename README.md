@@ -15,6 +15,11 @@ sudo apt install flatpak
 sudo apt install gnome-software-plugin-flatpak
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 ```
+
+Update flatpak software with
+```
+flatpak update
+```
 ### GPU drivers
 If you are running an AMD gpu, then your drivers come pre-installed with Linux and you are a better person.
 
