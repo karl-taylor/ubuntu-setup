@@ -30,7 +30,7 @@ For Nvidia drivers, open the Additonal Drivers app and select the latest availab
 ## Gaming
 
 ### Steam
-Install Steam
+#### Install Steam
 ```
 flatpak install flathub com.valvesoftware.Steam
 ```
@@ -38,10 +38,19 @@ Launch and sign into Steam, then navigate to Steam > Settings > Compatibility > 
 
 Steam games will install in your homedir under ~/.var/app/com.valvesoftware.Steam/.local/share/Steam/steamapps/common
 
-Install steam-devices, which just automatically changes some file permissions to allow steam to use hardware devices to access controllers
+#### Install steam-devices
+This automatically changes some file permissions to allow steam to use hardware devices to access controllers.
 ```
 sudo apt install steam-devices
 ```
+##### Steam save file locations
+For proton games Steam will create a fake Windows folder structure for each game to trick the it into thinking it's saving onto a normal Windows computer.
+
+These are stored at ~/.var/app/com.valvesoftware.Steam/.steam/steam/steamapps/compatdata/[STEAM-APP-ID]/pfx/drive_c/
+
+The STEAM-APP-ID can be found by visiting the Steam store page for a game, and it will be the number in the URL.
+
+From here the save files will be with the normal location they would be found in Windows, usually users/steamuser/Documents or /users/steamuser/AppData
 
 ### Proton ge
 Proton is a Windows compatability layer, built on top of WINE. Steam already comes with proton, but we will be adding proton ge wich is a fork that includes extras such as extra video codecs for more compatability.
