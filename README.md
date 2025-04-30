@@ -155,7 +155,7 @@ nano ~/update-all
 # Make it executable with
 chmod +x ~/update-all 
 ```
-File contents
+File contents (paste with CTRL+SHIFT+V in terminal)
 ```
 sudo apt update && sudo apt upgrade # apt updates (most of the system)
 echo '======= apt updates done ======='
