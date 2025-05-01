@@ -156,7 +156,7 @@ draws a cool train when you mess up typing ls
 sudo apt install sl
 ```
 
-## oneko
+### oneko
 cat
 ```
 sudo apt isntall oneko
