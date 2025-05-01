@@ -139,7 +139,7 @@ Show the sizes of all directories and explore them (like windirstat etc)
 ```
 sudo apt install ncdu
 ```
-Use -x to ignore other drives, and sudo to get system files. Expore all drive contents with
+Use -x to ignore other drives, and sudo to get system files. Explore all drive contents with
 ```
 sudo ncdu -x /
 ```
