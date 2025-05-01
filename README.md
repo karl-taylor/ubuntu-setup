@@ -156,6 +156,12 @@ draws a cool train when you mess up typing ls
 sudo apt install sl
 ```
 
+## oneko
+cat
+```
+sudo apt isntall oneko
+```
+
 ## Updating everything
 sudo apt upgrade will install updates for software installed via apt, but not flatpaks or other hardware devices. Note: snaps will auto-update
 
@@ -172,9 +178,9 @@ File contents
 ```
 sudo apt update && sudo apt upgrade # apt updates (most of the system)
 echo '======= apt updates done ======='
-sudo flatpak update # update flatpaks
+sudo flatpak update
 echo '======= flatpak updates done ======='
-sudo fwupdmgr get-updates # firmware updates
+sudo fwupdmgr get-updates && sudo fwupdmgr update
 echo '======= firmware updates done ======='
 echo '======= all updates done ======='
 ```
