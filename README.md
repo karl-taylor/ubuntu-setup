@@ -160,6 +160,7 @@ sudo nano /etc/bluetooth/main.conf
 ```
 
 ```
+# Under [General]
 FastConnectable = true
 Privacy = device
 JustWorksRepairing = always
