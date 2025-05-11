@@ -132,6 +132,26 @@ sudo mv '~/.var/app/com.valvesoftware.Steam/.local/share/Steam/steamapps/common/
 sudo ln /mnt/showhardrive/steamapps '~/.var/app/com.valvesoftware.Steam/.local/share/Steam/steamapps/common/Helldivers 2' -s
 ```
 
+# Bluetooth controllers
+This has been tested as working with an Xbox One controller connected via bluetooth (no Xbox dongle).
+
+I already had steam-devices installed, this might be helping but may not be required for non-Steam programs.
+
+## xpadneo
+Install xpadneo with:
+```
+cd
+git clone https://github.com/atar-axis/xpadneo.git
+cd xpadneo
+sudo ./install.sh
+```
+You must then 
+1. restart you computer (or maybe just the relevant services, but too hard)
+2. Forget your bluetooth controller if it has already been paired
+3. Add the controller again via the system settings (I did not need to use the CLI commands that xpadneo describe).
+
+Note: Bluetooth controller does not work in other apps while Steam is running. But with this setup I was able to play both Steam and Heroic Games Launcher games with bluetooth.
+
 ## Other userful linux cli apps to install
 
 ### ncdu
