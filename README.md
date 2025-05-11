@@ -152,6 +152,22 @@ You must then
 
 Note: Bluetooth controller does not work in other apps while Steam is running. But with this setup I was able to play both Steam and Heroic Games Launcher games with bluetooth.
 
+## Editing bluetooth config.
+Not sure if this is needed, feed free to test with and without, but I have the following edits to /etc/bluetooth/main.conf
+
+```
+sudo nano /etc/bluetooth/main.conf
+```
+
+```
+FastConnectable = true
+Privacy = device
+JustWorksRepairing = always
+
+# Under [Policy]
+AutoEnable=true
+```
+
 ## Other userful linux cli apps to install
 
 ### ncdu
