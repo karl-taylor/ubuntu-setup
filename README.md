@@ -152,6 +152,31 @@ You must then
 
 Note: Bluetooth controller does not work in other apps while Steam is running. But with this setup I was able to play both Steam and Heroic Games Launcher games with bluetooth.
 
+## Connecting the controller via the CLI
+This might be needed at least once, needs further testing.
+
+Find the MAC Address of your bluetooth controller, there's a couple methods for this
+1. Easiest. Connect via the GUI first, click on the controller and note down the Address before forgetting the device
+2. Or run the scan on command in the cli, wait until all the bluetooth devices in the neighbourhood fly past, then turn on the controller for it to display at the end
+```
+sudo bluetoothctl
+
+scan on
+# Wait before turning on controller
+# Turn on controller and note the mac address
+scan off
+
+# CTRL+D 
+```
+
+Then run the following commands with you MAC in place
+```
+sudo bluetoothctl
+pair [MAC]
+trust [MAC]
+connect [MAC]
+```
+
 ## Editing bluetooth config.
 Not sure if this is needed, feed free to test with and without, but I have the following edits to /etc/bluetooth/main.conf
 
