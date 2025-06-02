@@ -194,7 +194,19 @@ JustWorksRepairing = always
 AutoEnable=true
 ```
 
-## Other userful linux cli apps to install
+# Other stuff
+
+## make the clock useful when in fullscreen
+With Gnome desktop, fullscreen apps will run on the primary display and cover the topbar with the clock/notifications etc. Install this extention to automatically move it to another screen whenever an app is run in full screen
+```
+sudo apt install gnome-shell-extension-manager
+# check current gnome version with
+gnome-shell --version
+```
+Then navigate here, select your gnome version, click install and open with the newly installed gnome-shell-extension-manager
+https://extensions.gnome.org/extension/4362/fullscreen-avoider/
+
+## userful linux cli apps to install
 
 ### ncdu
 Show the sizes of all directories and explore them (like windirstat etc)
