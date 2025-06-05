@@ -103,7 +103,7 @@ flatpak install flathub com.discordapp.Discord
 ```
 
 ## Floorp
-Fuck firefox. Use this non-user-tracking fork instead
+Fuck firefox. Use this hopefully-less-user-tracking fork instead
 ```
 flatpak install flathub one.ablaze.floorp
 ```
