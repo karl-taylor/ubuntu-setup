@@ -123,13 +123,13 @@ Quotes are optional, but are required if you want to add spaces to a path.
 Example, moving all Steam games onto a drive I have mounted at /mnt/slowharddrive/
 ```
 sudo mv ~/.var/app/com.valvesoftware.Steam/.local/share/Steam/steamapps /mnt/showhardrive
-sudo ln /mnt/showhardrive/steamapps ~/.var/app/com.valvesoftware.Steam/.local/share/Steam/steamapps -s
+sudo ln -s /mnt/showhardrive/steamapps ~/.var/app/com.valvesoftware.Steam/.local/share/Steam/steamapps
 ```
 
 Move specifically just Helldivers 2
 ```
 sudo mv '~/.var/app/com.valvesoftware.Steam/.local/share/Steam/steamapps/common/Helldivers 2' /mnt/showhardrive
-sudo ln /mnt/showhardrive/steamapps '~/.var/app/com.valvesoftware.Steam/.local/share/Steam/steamapps/common/Helldivers 2' -s
+sudo ln -s /mnt/showhardrive/steamapps '~/.var/app/com.valvesoftware.Steam/.local/share/Steam/steamapps/common/Helldivers 2'
 ```
 
 # Bluetooth controllers
